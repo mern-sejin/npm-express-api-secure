@@ -28,6 +28,7 @@ app.use(secure({
     origin: ['http://localhost:5173'],  // Allowed client-side origin
     apiKey: 'your-api-key',             // API key for security
     tokenSecret: 'secret',              // Secret for JWT authentication
+    tokenName: 'x-token',               // Optional
     sameSite: 'none',                   // Cookie security: 'none' | 'strict' | 'lax'
     onError: {                          // Optional error handling
         code: 401,                      // HTTP status code
@@ -86,7 +87,7 @@ app.use(secure({
 }));
 ```
 ## License
-This package is open source and available under the MIT license.
+This package is open source and available under the ISC license.
 ## Author
 ### Sejin Ahmed (MERN Stack Web Developer)
 ### Thank You for visiting!!!!
